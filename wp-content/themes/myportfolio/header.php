@@ -36,4 +36,4 @@
   <?php wp_head(); ?>
 </head>
 <body>
-  <?php require_once($webroot."/assets/inc/header.html"); ?>
+<?php require_once($webroot."/assets/inc/header.html"); ?>
