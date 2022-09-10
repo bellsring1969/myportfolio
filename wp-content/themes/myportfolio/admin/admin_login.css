@@ -1,0 +1,9 @@
+@charset "UTF-8";
+#login h1 {
+  margin-bottom: 20px;
+}
+#login h1 a {
+  width: 126px;
+  height: 81px;
+  background: url(/assets/img/common/logo_01_sp.svg) no-repeat center center;
+}
