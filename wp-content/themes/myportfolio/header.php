@@ -16,11 +16,9 @@
   <title>404 File Not Found | My Portfolio | T.S.のポートフォリオ</title>
   <?php endif; ?>
   <?php if ( is_front_page()): //description ?>
-  <meta name="description" content="T.S.のポートフォリオサイトです。これまでの制作物をまとめました。">
+  <meta name="description" content="T.S.のポートフォリオサイトです。">
   <?php elseif ( is_post_type_archive('works') ): ?>
-  <meta name="description" content="制作物一覧ページです。これまでコーダーとして制作に携わってきた案件をまとめました。">
-  <?php elseif ( is_tax('works_category') ): ?>
-  <meta name="description" content="<?php single_cat_title(); ?>の制作物一覧ページです。これまでコーダーとして制作に携わってきた案件をまとめました。">
+  <meta name="description" content="T.S.のポートフォリオサイトの制作物一覧ページです。これまでに携わった主な案件をまとめました。">
   <?php elseif ( is_404() ): ?>
   <meta name="description" content="404 File Not Foundページです。">
   <?php endif; ?>
