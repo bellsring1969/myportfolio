@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@for $i from 0 through 100 {
+  // margin
+  .u-m#{$i * 5} {
+    margin:#{$i * 5}px !important;
+  }
+  .u-mt#{$i * 5} {
+    margin-top:#{$i * 5}px !important;
+  }
+  .u-mr#{$i * 5} {
+    margin-right:#{$i * 5}px !important;
+  }
+  .u-mb#{$i * 5} {
+    margin-bottom:#{$i * 5}px !important;
+  }
+  .u-ml#{$i * 5} {
+    margin-left:#{$i * 5}px !important;
+  }
+  // padding
+  .u-p#{$i * 5} {
+    padding:#{$i * 5}px !important;
+  }
+  .u-pt#{$i * 5} {
+    padding-top:#{$i * 5}px !important;
+  }
+  .u-pr#{$i * 5} {
+    padding-right:#{$i * 5}px !important;
+  }
+  .u-pb#{$i * 5} {
+    padding-bottom:#{$i * 5}px !important;
+  }
+  .u-pl#{$i * 5} {
+    padding-left:#{$i * 5}px !important;
+  }
+}
+
+@media all and (max-width: 767px) {
+  @for $i from 0 through 50 {
+    .u-m#{$i * 5} {
+      margin:#{$i * 2.5}px !important;
+    }
+    .u-mt#{$i * 5} {
+      margin-top:#{$i * 2.5}px !important;
+    }
+    .u-mr#{$i * 5} {
+      margin-right:#{$i * 2.5}px !important;
+    }
+    .u-mb#{$i * 5} {
+      margin-bottom:#{$i * 2.5}px !important;
+    }
+    .u-ml#{$i * 5} {
+      margin-left:#{$i * 2.5}px !important;
+    }
+
+    .u-p#{$i * 5} {
+      padding:#{$i * 2.5}px !important;
+    }
+    .u-pt#{$i * 5} {
+      padding-top:#{$i * 2.5}px !important;
+    }
+    .u-pr#{$i * 5} {
+      padding-right:#{$i * 2.5}px !important;
+    }
+    .u-pb#{$i * 5} {
+      padding-bottom:#{$i * 2.5}px !important;
+    }
+    .u-pl#{$i * 5} {
+      padding-left:#{$i * 2.5}px !important;
+    }
+  }
+}
+
+
+
+@media all and (max-width: 767px) {
+  @for $i from 0 through 50 {
+    .u-sm-m#{$i * 5} {
+      margin:#{$i * 5}px !important;
+    }
+    .u-sm-mt#{$i * 5} {
+      margin-top:#{$i * 5}px !important;
+    }
+    .u-sm-mr#{$i * 5} {
+      margin-right:#{$i * 5}px !important;
+    }
+    .u-sm-mb#{$i * 5} {
+      margin-bottom:#{$i * 5}px !important;
+    }
+    .u-sm-ml#{$i * 5} {
+      margin-left:#{$i * 5}px !important;
+    }
+
+    .u-sm-p#{$i * 5} {
+      padding:#{$i * 5}px !important;
+    }
+    .u-sm-pt#{$i * 5} {
+      padding-top:#{$i * 5}px !important;
+    }
+    .u-sm-pr#{$i * 5} {
+      padding-right:#{$i * 5}px !important;
+    }
+    .u-sm-pb#{$i * 5} {
+      padding-bottom:#{$i * 5}px !important;
+    }
+    .u-sm-pl#{$i * 5} {
+      padding-left:#{$i * 5}px !important;
+    }
+  }
+}

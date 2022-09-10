@@ -1,0 +1,55 @@
+// align
+.u-txt-center {
+  text-align: center!important;
+}
+.u-txt-right {
+  text-align: right!important;
+}
+.u-txt-left {
+  text-align: left!important;
+}
+
+// weight
+.u-fw-bold {
+  font-weight: 700 !important;
+}
+.u-fw-500 {
+  font-weight: 500 !important;
+}
+.u-fw-400 {
+  font-weight: 400 !important;
+}
+
+// size
+.u-txt-exlarge {
+}
+.u-txt-large {
+}
+.u-txt-medium {
+}
+.u-txt-small {
+  font-size: 1.2rem;
+}
+.u-txt-tiny {
+  font-size: 1rem;
+}
+
+// line-height
+.u-lh-large {
+}
+.u-lh-small {
+}
+
+// indent
+.u-txt-indent-01 {
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
+// color
+.u-txt-red {
+  color: $red;
+}
+.u-txt-white {
+  color: #fff;
+}

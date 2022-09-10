@@ -1,0 +1,19 @@
+@for $i from 0 through 20 {
+  .u-w#{$i * 5} {
+    width:#{$i * 5}% !important;
+  }
+}
+@include sp {
+  @for $i from 0 through 20 {
+    .u-sp-w#{$i * 5} {
+      width:#{$i * 5}% !important;
+    }
+  }
+}
+@include pc {
+  @for $i from 0 through 20 {
+    .u-pc-w#{$i * 5} {
+      width:#{$i * 5}% !important;
+    }
+  }
+}

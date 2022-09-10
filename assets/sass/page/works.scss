@@ -1,0 +1,26 @@
+@import '../foundation/mixin.scss';
+@import '../foundation/def.scss';
+
+.works {
+  .inner {
+    padding-top: 50px;
+    @include pc {
+      padding-top: 72px;
+    }
+  }
+  &__nav {
+    margin: 0 0 20px;
+    @include pc {
+      margin: 0 0 36px;
+    }
+  } 
+  &__txt {
+    &-error {
+      margin: 24px 0 0;
+      text-align: center;
+      @include pc {
+        margin: 48px 0 0;
+      }
+    }
+  }
+}

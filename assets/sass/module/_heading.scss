@@ -1,0 +1,10 @@
+.m-heading-01 {
+  margin: 0 0 29px;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  @include pc {
+    margin: 0 0 60px;
+    font-size: 4.5rem;
+  }
+}

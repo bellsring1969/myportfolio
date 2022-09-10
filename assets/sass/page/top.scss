@@ -1,0 +1,118 @@
+@import '../foundation/mixin.scss';
+@import '../foundation/def.scss';
+
+
+.mv {
+  .inner {
+    padding-top: 66px;
+    padding-bottom: 66px;
+    @include pc {
+      padding-top: 108px;
+      padding-bottom: 131px;
+    }
+  }
+  &__ttl {
+    font-size: 3.9rem;
+    font-weight: 900;
+    text-align: center;
+    @include pc {
+      font-size: 5.4rem;
+    }
+  }
+}
+.m-heading-01 {
+  @include pc {
+    font-size: 4.3rem;
+  }
+}
+.profile {
+  .m-heading-01 {
+    margin: 0 0 20px;
+    @include pc {
+      margin: 0 0 56px;
+    }
+  }
+  .inner {
+    padding-top: 70px;
+    padding-bottom: 67px;
+    margin-top: -70px;
+    @include pc {
+      padding-top: 100px;
+      padding-bottom: 124px;
+      margin-top: -100px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 4px;
+    @include pc {
+      margin: 0 0 10px;
+    }
+    &:last-of-type {
+      margin: 0 0 0;
+    }
+    &-container {
+      margin: 0 0 19px;
+      @include pc {
+        margin: 0 0 30px;
+      }
+    }
+    &-ttl {
+      &::after {
+        content: "：";
+      }
+    }
+  }
+  &__txt {
+    text-align: center;
+    line-height: 2.2;
+  }
+}
+.skills {
+  .m-heading-01 {
+    margin: 0 0 38px;
+    @include pc {
+      margin: 0 0 64px;
+    }
+  }
+  .inner {
+    padding-top: 70px;
+    padding-bottom: 43px;
+    margin-top: -70px;
+    @include pc {
+      padding-top: 100px;
+      padding-bottom: 96px;
+      margin-top: -100px;
+    }
+  }
+}
+.works {
+  .inner {
+    padding-bottom: 42px;
+  }
+  .m-card-01 {
+    width: 80%;
+    margin: 0 auto 30px;
+    @include pc {
+      width: 33%;
+      margin: 0 2%;
+    }
+    &__container {
+      display: block;
+      margin: 0 auto;
+      @include pc {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin: 0 -2%;
+      }
+    }
+    &__client, &__ttl {
+      font-size: 1.6rem;
+    }
+    &__date {
+      font-size: 1.5rem;
+    }
+  }
+}

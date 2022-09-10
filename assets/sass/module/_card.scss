@@ -1,0 +1,156 @@
+.m-card-01 {
+  width: 48%;
+  max-width: 320px;
+  margin: 0 1% 18px;
+  cursor: pointer;
+  @include pc {
+    width: 23.5%;
+    margin: 0 .75% 32px;
+  }
+  .m-list-01 {
+    justify-content: flex-start;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+    @include pc {
+      margin: 0 -.6%;
+    }
+  }
+  &__img {
+    margin: 0 0 14px;
+    width: 100%;
+    @include pc {
+      margin: 0 0 16px;
+    }
+  }
+  &__client, &__ttl {
+    font-weight: 700;
+  }
+  &__client {
+    margin: 0 0 5px;
+    font-size: 1.4rem;
+    @include pc {
+      margin: 0 0 7px;
+    }
+  }
+  &__ttl {
+    margin: 0 0 5px;
+    font-size: 1.5rem;
+    @include pc {
+      margin: 0 0 5px;
+      font-size: 1.6rem;
+    }
+  }
+  &__date {
+    color: #969696;
+    font-size: 1.4rem;
+  }
+}
+.m-card-02 {
+  width: 29%;
+  margin: 0 2% 26px;
+  text-align: center;
+  @media screen and (min-width: 491px) and (max-width: 768px) {
+    width: 21%;
+    max-width: 180px;
+    margin: 0 2% 36px;
+  }
+  @include pc  {
+    width: 14%;
+    max-width: 180px;
+    margin: 0 1.33% 38px;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -2%;
+    @include pc {
+      margin: 0 -1.33%;
+    }
+    @media screen and (min-width: 491px) and (max-width: 768px){
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 400px) and (max-width: 490px){
+      max-width: 366px;
+      margin: 0 auto;
+    }
+  }
+  &__icon {
+    width: 60%;
+    max-width: 40px;
+    margin: 0 auto 11px;
+    @include pc {
+      width: 52%;
+      max-width: 64px;
+      margin: 0 auto 18px;
+    }
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 70%;
+      height: 5vw;
+      margin: 0 auto 11px;
+      @include pc {
+        width: 11vw;
+        height: 11vw;
+        margin: 0 auto 12px;
+      }
+    }
+    &-circle {
+      position: absolute;
+      top: 0;
+      width: 11vw;
+      height: 11vw;
+      overflow: hidden;
+      @include pc {
+
+      }
+      &.is-years-02 {
+        right: 0;
+        width: 5.5vw;
+        transform: rotate(180deg);
+      }
+      &::before {
+        content: '';
+        display: block;
+        width: 11vw;
+        height: 11vw;
+        border-radius: 50%;
+        border: 8px solid #202020;
+        box-sizing: border-box;
+      }
+    }
+  }
+  &__experience {
+    margin: 0 0 5px;
+    font-size: 1.4rem;
+    @include pc {
+      margin: 0 0 8px;
+      font-size: 1.6rem;
+    }
+    &-num {
+      margin: 0 2px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 2.1rem;
+      font-weight: 900;
+      @include pc {
+        margin: 0 3px;
+        font-size: 2.4rem;
+      }
+    }
+  }
+  &__name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    @include pc {
+      font-size: 2rem;
+    }
+  }
+}

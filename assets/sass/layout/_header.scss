@@ -1,0 +1,130 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  .inner {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    z-index: 100;
+    @include pc {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+  &__logo {
+    flex-shrink: 0;
+    width: 152px;
+    margin: 0 auto 0 0;
+    @include pc {
+      width: 232px;
+    }
+  }
+  &__nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 47px;
+    width: 100%;
+    background: #fff;
+    @include pc {
+      display: block !important;
+      position: relative;
+      top: 0;
+      margin: 0 auto 0 0;
+      background: none;
+    }
+    &-list {
+      padding: 0 5% 10px;
+      @include pc {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 0 0;
+      }
+      &-item {
+        border-bottom: 1px solid #202020;
+        @include pc {
+          margin: 0 34px 0 0;
+          border-bottom: none;
+        }
+        &:last-of-type {
+          border-bottom: none;
+          @include pc {
+            margin: 0 0 0 0;
+          }
+        }
+        a {
+          display: block;
+          padding: 10px 0;
+          font-weight: 700;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    &-wrapper {
+      display: none;
+      position: fixed;
+      z-index: -1;
+      top: 200px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      cursor: pointer;
+      &.is-open {
+        display: block;
+        z-index: 99;
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    @include pc {
+      display: none;
+    }
+    &-lyt {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: right;
+    }
+    span {
+      width: 30px;
+      height: 3px;
+      background: #202020;
+      border-radius: 4px;
+      transition: width .3s ease-out, transform .3s ease-out;
+      &:first-of-type {
+        margin-top: -16px;
+      }
+      &:last-of-type {
+        margin-bottom: -16px;
+      }
+    }
+    &.is-open {
+      span {
+        width: 28px;
+        &:first-of-type {
+          transform: translateY(9px) rotate(-45deg);
+        }
+        &:nth-of-type(2) {
+          opacity: 0;
+        }
+        &:last-of-type {
+          transform: translateY(-10px) rotate(45deg);
+        }
+      }
+    }
+  }
+}

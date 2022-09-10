@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+// breakpoint
+$breakpoint: 767;
+@mixin pc {
+  @media screen and (min-width: ($breakpoint+1) + px) {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: $breakpoint + px) {
+    @content;
+  }
+}
+
+// font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Roboto:ital,wght@0,500;0,700;0,900;1,500&display=swap');
+$base-font: 'Noto Sans JP', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 游ゴシック体, 'Yu Gothic', YuGothic, メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+$ff-min: 'Noto Serif JP', 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', '游明朝', YuMincho, 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+
+
+//===================================================================
+// CSS Document
+//
+// file name  : base.css
+// style info : Initial Style
+//===================================================================
+html {
+  overflow-y: scroll;
+}
+body, div, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, section, nav, article, aside, hgroup, header, address, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption, th {
+  text-align: left;
+}
+q:before, q:after {
+  content: '';
+}
+object, embed {
+  vertical-align: top;
+}
+legend {
+  display: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+img, abbr, acronym, fieldset {
+  border: 0;
+}
+img {
+  vertical-align: top;
+  -ms-interpolation-mode: bicubic;
+  box-shadow: #202020 0 0 0;
+  max-width: 100%;
+  height: auto;
+}
+a, button, input, textarea {
+  outline: none;
+}
+x:-moz-any-link, x:default {
+  box-shadow: #202020 0 0 0;
+}
+a {
+  color: #202020;
+  text-decoration: none;
+  transition: opacity .3s ease;
+  &:hover {
+    @include pc {
+      text-decoration: none;
+      opacity: .7;
+    }
+  }
+  &.is-disabled {
+    pointer-events: none;
+    @include pc {
+      cursor: none;
+    }
+  }
+}
+a[href^=tel] {
+  &:hover {
+    @include pc {
+      opacity: 1;
+    }
+  }
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font: 62.5%/1.231 $base-font;
+}
+body {
+  position: relative;
+  color: #202020;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.7;
+  @include sp {
+    font-size: 1.6rem;
+  }
+  &.is-fixed {
+    position: fixed;
+    overflow: visible;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+select, input, button, textarea, table {
+  font: 1.0rem $base-font;
+}
+pre, code, kbd, samp, tt {
+  font-family: $base-font;
+  line-height: 1;
+}
+.pc-none {
+  @include pc {
+    display: none;
+  }
+}
+.sp-none {
+  @include sp {
+    display: none;
+  }
+}
+.inner {
+  padding: 0 5%;
+  @include pc {
+    max-width: 1080px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+.common {
+  &__indent {
+    display: inline-block;
+  }
+}
+.main {
+  padding-top: 39px;
+  @include pc {
+    padding-top: 74px;
+  }
+}
+.works {
+  .inner {
+    padding-bottom: 40px;
+    @include pc {
+      padding-bottom: 42px;
+    }
+  }
+}
+.js-fadeup {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 1.5s, transform 1.5s;
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.js-fadeup-row-child {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 1.5s, transform 1.5s;
+  .js-fadeup-row.is-visible & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

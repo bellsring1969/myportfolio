@@ -1,0 +1,23 @@
+@import '../foundation/mixin.scss';
+@import '../foundation/def.scss';
+
+.p404 {
+  .inner {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    @include pc {
+      padding-top: 72px;
+      padding-bottom: 42px;
+    }
+  }
+  &__txt {
+    margin: 0 0 0;
+    text-align: center;
+    @include pc {
+      margin: 0 0 0;
+    }
+  }
+  &__link {
+    text-align: center;
+  }
+}

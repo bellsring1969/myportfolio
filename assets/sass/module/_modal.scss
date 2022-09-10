@@ -1,0 +1,189 @@
+.m-modal-01 {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+  &.is-shown {
+    opacity: 1;
+    visibility: visible;
+    z-index: 201;
+  }
+  .inner {
+    height: 100%;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    border-radius: 10px;
+    background: #fff;
+    margin: 0 auto;
+    @include pc {
+      padding: 55px 71px 45px;
+      border-radius: 14px;
+    }
+  }
+  .m-list-01 {
+    justify-content: flex-start;
+    margin: 0 0 4px;
+    @include pc {
+      margin: 0 0 5px;
+    }
+  }
+  a {
+    pointer-events: none;
+  }
+  &__container, &__wrapper {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    opacity: 0;
+    visibility: hidden;
+    &.is-shown {
+      opacity: 1;
+      visibility: visible;
+    }
+    a {
+      pointer-events: all;
+    }
+  }
+  &__container {
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    width: 90vw;
+    max-width: 580px;
+    height: 80vh;
+    margin: 0 auto;
+    @include pc {
+      max-width: 640px;
+      height: 84vh;
+    }
+    &.is-shown {
+      z-index: 200;
+    }
+  }
+  &__wrapper {
+    background: rgba(0,0,0,.3);
+    cursor: pointer;
+    &.is-shown {
+      z-index: 199;
+    }
+  }
+  &__scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+  }
+  &__img {
+    margin: 0 0 24px;
+    @include pc {
+      margin: 0 0 26px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__ttl {
+    margin: 0 0 6px;
+    font-size: 1.8rem;
+    @include pc {
+      margin: 0 0 7px;
+      font-size: 2.3rem;
+    }
+  }
+  &__client {
+    margin: 0 0 0;
+    @include pc {
+      font-size: 2rem;
+    }
+  }
+  &__lyt {
+    padding: 0 0 16px;
+    margin: 0 0 16px;
+    border-bottom: 1px solid #202020;
+    @include pc {
+      padding: 0 0 20px;
+      margin: 0 0 20px;
+    }
+  }
+  &__list {
+    margin: 0 0 17px;
+    @include pc {
+      margin: 0 0 21px;
+    }
+    &:last-of-type {
+      margin: 0 0 0;
+    }
+    &-ttl {
+      margin: 0 0 0 -9px;
+      @include pc {
+        margin: 0 0 1px -11px;
+      }
+    }
+    &-desc {
+      a {
+        text-decoration: underline;
+        &::after {
+          content: "";
+          display: inline-block;
+          vertical-align: bottom;
+          width: 22px;
+          height: 22px;
+          margin: 0 0 0 2px;
+          background: url(/assets/img/common/window.svg) center / cover;
+          @include pc {
+            width: 24px;
+            height: 24px;
+            margin: 0 0 0 3px;
+          }
+        }
+      }
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: -20px;
+    right: -12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #555;
+    cursor: pointer;
+    transition: opacity .4s;
+    @include pc {
+      width: 48px;
+      height: 48px;
+    }
+    &::before, &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 2px;
+      height: 25px;
+      background: #fff;
+      @include pc {
+        height: 32px;
+      }
+    }
+    &::before {
+      transform: translateY(-50%) rotate(-45deg);
+    }
+    &::after {
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+}

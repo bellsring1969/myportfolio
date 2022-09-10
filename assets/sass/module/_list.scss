@@ -1,0 +1,85 @@
+.m-list-01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -5px;
+  &__item {
+    margin: 0 5px 10px;
+    @include pc {
+      margin: 0 5px 10px;
+    }
+    a, span {
+      display: block;
+      padding: 1px 14px;
+      background: #202020;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 1.4rem;
+      @include pc {
+        padding: 0 14px;
+        font-size: 1.5rem;
+      }
+      @media screen and (max-width: 350px){
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+.m-list-02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 36px 0 0;
+  @include pc {
+    margin: 45px 0 0;
+  }
+  &__item {
+    flex-shrink: 0;
+    margin: 0 16px 0 0;
+    @include pc {
+      margin: 0 20px 0 0;
+    }
+    a, span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      padding: 0 0 1px 2px;
+      font-size: 1.8rem;
+      font-weight: 400;
+      text-align: center;
+      @include pc {
+        width: 52px;
+        height: 52px;
+        padding: 0 0 3px 2px;
+        font-size: 2.3rem;
+      }
+      &.prev, &.next {
+        width: 18px;
+        height: 32px;
+        margin: 0 11px 0 0;
+        background: url(/assets/img/common/arrow_prev.svg) top center/cover;
+        @include pc {
+          width: 22px;
+          height: 40px;
+          margin: 0 16px 0 0;
+        }
+      }
+      &.next {
+        margin: 0 0 0 11px;
+        background: url(/assets/img/common/arrow_next.svg) top center/cover;
+        @include pc {
+          margin: 0 0 0 16px;
+        }
+      }
+    }
+    span {
+      &.current {
+        border: 1px solid #202020;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import 'foundation/mixin.scss';
+@import 'foundation/def.scss';
+
+/* ===================================================================
+ CSS Document
+
+ file name  : base.css
+ style info : Initial Style
+=================================================================== */
+html {
+  overflow-y: scroll; }
+
+body, div, dl, dt, dd {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0; }
+
+ul li, ol li {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, section, nav, article, aside, hgroup, header, address, figure, figcaption {
+  margin: 0;
+  padding: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th {
+  text-align: left; }
+
+q:before, q:after {
+  content: ''; }
+
+object, embed {
+  vertical-align: top; }
+
+legend {
+  display: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; }
+
+img, abbr, acronym, fieldset {
+  border: 0; }
+
+img {
+  vertical-align: top;
+  -ms-interpolation-mode: bicubic; }
+
+ul li, ol li {
+  list-style-type: none; }
+
+a, button, input, textarea {
+  outline: none; }
+
+img {
+  -webkit-box-shadow: #202020 0 0 0;
+  box-shadow: #202020 0 0 0; }
+
+x:-moz-any-link, x:default {
+  box-shadow: #202020 0 0 0; }
+
+a {
+  color: #202020;
+  text-decoration: none;
+  transition: opacity .3s ease; }
+
+a:hover {
+  @include pc {
+    text-decoration: none;
+    opacity: .7;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font: 62.5%/1.231 $base-font; }
+
+body {
+  font-size: 1.0rem;
+  letter-spacing: -0.001em;
+  -webkit-text-size-adjust: 100%; }
+
+select, input, button, textarea, table {
+  font: 1.0rem $base-font; }
+
+pre, code, kbd, samp, tt {
+  font-family: $base-font;
+  line-height: 1; }
+
+img {
+  max-width: 100%;
+  height: auto; }

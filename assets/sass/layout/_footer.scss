@@ -1,0 +1,15 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  @include pc {
+    padding-top: 100px;
+  }
+  &__copyright {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    @include pc {
+      font-size: 1.5rem;
+    }
+  }
+}

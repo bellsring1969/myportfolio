@@ -1,0 +1,22 @@
+<header class="header">
+  <div class="inner">
+    <div class="header__logo"><a href="/"><img src="/assets/img/common/logo.png" alt="MyPortfolio"></a></div>
+    <nav id="header-nav" class="header__nav">
+    <?php if ( is_front_page()): ?>
+      <ul class="header__nav-list">
+        <li class="header__nav-list-item"><a href="#profile">PROFILE</a></li>
+        <li class="header__nav-list-item"><a href="#skills">SKILLS</a></li>
+        <li class="header__nav-list-item"><a href="/works/">WORKS</a></li>
+      </ul>
+    <?php else: ?>
+      <ul class="header__nav-list">
+        <li class="header__nav-list-item"><a href="/#profile">PROFILE</a></li>
+        <li class="header__nav-list-item"><a href="/#skills">SKILLS</a></li>
+        <li class="header__nav-list-item"><a href="/works/">WORKS</a></li>
+      </ul>
+    <?php endif; ?>
+    </nav>
+    <div id="header-btn" class="header__btn"><div class="header__btn-lyt"><span></span><span></span><span></span></div></div>
+  </div>
+  <div id="header-nav-wrapper" class="header__nav-wrapper"></div>
+</header>
