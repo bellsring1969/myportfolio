@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main role="main" class="main">
-  <section id="works" class="works">
+  <section id="works" class="works js-fadeup">
     <div class="inner">
       <h1 class="m-heading-01">WORKS</h1>
       <nav class="works__nav">

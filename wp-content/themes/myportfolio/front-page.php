@@ -1,17 +1,17 @@
 <?php get_header(); ?>
 <main role="main" class="main">
-  <section class="mv">
+  <section class="mv js-fadeup">
     <div class="inner">
       <h1 class="mv__ttl">My Portfolio</h1>
     </div>
   </section>
-  <section id="profile" class="profile">
+  <section id="profile" class="profile js-fadeup">
     <div class="inner">
       <h2 class="m-heading-01">PROFILE</h2>
-      <div class="profile__txt">ポートフォリオをご覧いただき、<span class="common__indent">ありがとうございます。</span><span class="common__indent">WebエンジニアのT.S.と申します。</span><br>静的サイトのコーディング、<span class="common__indent">CMSサイトおよびECサイトの構築を</span><span class="common__indent">得意としています。</span><br>SEとして働いた経験があり、<span class="common__indent">バックエンドの知識も豊富で、</span><span class="common__indent">仕様の擦り合わせや工数管理も</span><span class="common__indent">得意としています。</span></div>
+      <div class="profile__txt">ポートフォリオをご覧いただき、<span class="common__indent">ありがとうございます。</span><span class="common__indent"><span class="common__indent">エンジニア兼コーダーの</span><span class="common__indent">T.S.と申します。</span></span><br>静的サイトのコーディング、<span class="common__indent"><span class="common__indent">CMSサイトおよびECサイトの構築を</span><span class="common__indent">得意としています。</span></span><br>SEとして働いた経験があり、<span class="common__indent">バックエンドの知識も豊富で、</span><span class="common__indent"><span class="common__indent">仕様の擦り合わせや工数管理も</span><span class="common__indent">得意としています。</span></span></div>
     </div>
   </section>
-  <section id="skills" class="skills">
+  <section id="skills" class="skills js-fadeup">
     <div class="inner">
       <h2 class="m-heading-01">SKILLS</h2>
       <div class="m-card-02__container">
@@ -108,7 +108,7 @@
       </div>
     </div>
   </section>
-  <section class="works"> 
+  <section class="works js-fadeup"> 
     <div class="inner">
       <h1 class="m-heading-01">WORKS</h1>
       <?php
