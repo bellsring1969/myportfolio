@@ -160,6 +160,11 @@ pre, code, kbd, samp, tt {
 .common {
   &__indent {
     display: inline-block;
+    &-sp {
+      @include pc {
+        display: inline;
+      }
+    }
   }
 }
 .main {
