@@ -140,7 +140,7 @@
             ?>
           </ul>
           <div class="m-card-01__ttl"><?php the_title(); ?></div>
-          <div class="m-card-01__client"><?php echo $client; ?> 様</div>
+          <div class="m-card-01__client"><?php echo $client; ?>様</div>
           <div class="m-card-01__date"><time datetime="<?php echo $project_start ?>"><?php echo $project_start_formatted ?></time> 〜</div>
         </div>
         <?php endwhile; ?>
@@ -186,7 +186,7 @@
             <li class="m-list-01__item"><span><?php echo $term->name; ?></span></li>
           </ul>
           <div class="m-modal-01__ttl"><?php the_title(); ?></div>
-          <div class="m-modal-01__client"><?php echo $client ?> 様</div>
+          <div class="m-modal-01__client"><?php echo $client ?>様</div>
         </div>
         <div class="m-modal-01__list-container">
           <dl class="m-modal-01__list">
